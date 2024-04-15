@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background: #111; /* Dark grey header for better contrast */
+  background: #111; 
 }
 
 h1 {
@@ -144,7 +144,7 @@ section img {
 }
 
 #siteDescription li {
-  padding-left: 20px; /* Adjust depending on your bullet image */
+  padding-left: 20px; 
   margin-bottom: 10px;
 }
 
@@ -163,6 +163,50 @@ section img {
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
   line-height: 2.6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.9em;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+tr {
+  background-color: black;
+}
+
+tr:hover {
+  background-color: gray;
+}
+
+#comparisonIntro {
+  margin-bottom: 20px; 
+  padding: 20px; 
+  background-color: black; 
+  border-radius: 8px; 
+}
+
+#comparisonIntro h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#comparisonIntro p {
+  color: white; 
+  font-size: 1em; 
 }
 
 
