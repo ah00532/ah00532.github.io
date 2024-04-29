@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit Your GOAT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Submit Your GOAT</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lebron.html">LeBron</a></li>
+            <li><a href="jordan.html">Jordan</a></li>
+            <li><a href="wilt.html">Wilt</a></li>
+            <li><a href="kareem.html">Kareem</a></li>
+            <li><a href="kobe.html">Kobe</a></li>
+            <li><a href="duncan.html">Duncan</a></li>
+            <li><a href="comparisons.html">Comparisons</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <form id="goatForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="opinion">Your GOAT:</label>
+            <textarea id="opinion" name="opinion" required placeholder="Tell us who you think the GOAT is and why..."></textarea>
+            <button type="submit">Submit Opinion</button>
+        </form>
+        <div id="submissions">
+            <h3>Submissions</h3>
+            <ul id="submissionList"></ul>
+        </div>
+    </section>
+</main>
+<footer>
+    <a href="mailto:ah00532@my.westga.edu">ah00532@my.westga.edu</a>
+</footer>
+<script>
+document.getElementById('goatForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const opinion = document.getElementById('opinion').value;
+    const submissionList = document.getElementById('submissionList');
+    const listItem = document.createElement('li');
+    listItem.textContent = `Name: ${name}, Opinion: ${opinion}`;
+    submissionList.appendChild(listItem);
+    
+    document.getElementById('name').value = '';
+    document.getElementById('opinion').value = '';
+});
+</script>
+</body>
+</html>
